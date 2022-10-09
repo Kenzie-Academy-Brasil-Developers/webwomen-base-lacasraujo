@@ -29,6 +29,7 @@ locStorage()
 renderCardsSelected()
 
 
+
 function renderCards(){
 
     jobsData.forEach(element => {
@@ -79,17 +80,23 @@ function renderCards(){
 
     cardButton.addEventListener("click",()=> {
         
+
        
         if( arrSelected.find(obj => obj == element ) == undefined  ){
             arrSelected.push(element)
             let arrSel = JSON.stringify(arrSelected)
             localStorage.setItem("PrefUser",arrSel)
-        }else(
-            window.alert("Vaga Ja selecionada")
-        )
+            cardButton.innerText = "Remover candidatura"
+        }else{
 
+            let index = arrSelected.indexOf(element)
 
+            arrSelected.splice( index,1)
 
+                cardButton.innerText = "Candidatar"
+
+            
+        }
 
         renderCardsSelected()
     })
@@ -107,6 +114,8 @@ function renderCards(){
 }
 
 renderCards()
+
+
 
 function renderCardsSelected(){
     
