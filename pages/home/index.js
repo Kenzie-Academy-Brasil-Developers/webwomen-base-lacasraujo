@@ -1,5 +1,18 @@
 /* Desenvolva sua lógica aqui... */
 let arrSelected=[]
+
+function goToVacancies(){
+    let vacanciesButton =document.querySelector(".vacanciesButton")
+    vacanciesButton.addEventListener("click",()=>{
+        let vacancies =document.querySelector(".vacancies")
+
+        window.scrollTo(0, vacancies)
+
+    } )
+}
+
+goToVacancies()
+
 function locStorage(){
 
   let arrUpdated =JSON.parse( localStorage.getItem("PrefUser"))
