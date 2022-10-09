@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/cards.css">
+    <link rel="stylesheet" href="/styles/aside.css">
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <title>Webwomen</title>
@@ -16,7 +19,102 @@
     />
 </head>
 <body>
-    <main></main>
+
+    <main>
+      
+      <header class=" contHeader parallax">
+        <div class="container">
+          
+        <img src="/assets/img/logo.svg" alt="Webwomen logo" class="imgLogo " >
+
+        <h2 class="tittle1">
+          Lugar de mulher é onde ela quiser!
+        </h2>
+
+        <p class="pHeader">
+          Está procurando oportunidades de estágio, emprego ou bolsas de estudo?<br>
+          Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil e ao redor do mundo? 
+        </p>
+
+        <div class="divSpanButton">
+        <span class="spanHeader">
+          Confere aqui embaixo o que temos pra você!
+        </span>
+
+        
+        <button class="vacanciesButton">
+          Ir para seção das vagas
+        </button>
+      </div>
+    </div>
+        
+      </header>
+
+      <div class=" container cardsAndAside">
+
+        <section class="vacancies">
+          <h3 class="vacanciesH3">Vagas</h3>
+
+          <div class="mainCards">
+
+          
+            
+            <!-- <div class="mainCard ">
+  
+              <h3 class="mainCardH3">
+                Pessoa desenvolvedora front-end - React JS
+              </h3>
+              <div class="spans">
+                <span class="enterprise">Kenzie</span>
+                <span class="location">Curitiba</span>
+              </div>
+  
+              <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+  
+              </p>
+  
+              <div class="buttonAndModalities">
+                <span class="modalities">Home Office</span>
+                <button class=" cardButton">Candidatar</button>
+              </div>
+
+              
+            </div> -->
+
+          </div>
+        </section>
+
+        <aside class="vacanciesSelected">
+          <h3 class="tittleAside">Vagas Selecionadas</h3>
+          <div class="cardsAside">
+
+            <!-- <p class="pPattern"> Você ainda não aplicou para nenhuma vaga </p>
+
+            <div class="cardAside">
+
+
+              <div class="h4AndButton">
+                <h4 class="CardAsideH4">
+                  Pessoa desenvolvedora front-end - React JS
+                </h4>
+                <button class="trash"></button>
+              </div>
+              <div class="spans">
+                <span class="enterprise">Kenzie</span>
+                <span class="location">Curitiba</span>
+              </div>
+            </div> -->
+            
+          </div>
+        </aside>
+
+      </div>
+
+    
+    </main>
+
     <script src="jobsData.js"></script>
     <script src="index.js"></script>
 </body>

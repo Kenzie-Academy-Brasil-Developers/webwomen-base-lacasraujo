@@ -1,0 +1,82 @@
+.vacanciesH3{
+
+    
+    margin-bottom: var(--spacing-3);
+}
+
+.mainCards{
+
+
+}
+
+.mainCard{
+
+    background-color:var(--color-grey-6);
+    padding: 2.375rem;
+    border-radius: var(--radius-1);
+    margin-bottom: var(--spacing-3);
+
+    font-weight: 400;
+    font-size: var(--text-3);
+    line-height: 1.375rem;
+    color: var(--color-grey-2);
+}
+
+.mainCardH3{
+    color: var(--color-grey-1);
+    margin-bottom: var(--spacing-3);
+
+}
+
+.spans{
+    margin-bottom: var(--spacing-3);
+
+}
+.enterprise{
+
+}
+.location{
+
+}
+
+.description{
+    margin-bottom: var(--spacing-3);
+
+}
+
+.buttonAndModalities{
+    margin-bottom: var(--spacing-3);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.modalities{
+   
+    padding: 0.25rem 0.75rem;
+    background-color: var(--color-grey-3);
+    gap: 0.625rem;
+    border-radius: var(--radius-1);
+
+
+}
+
+.cardButton{
+    padding: 0.75rem 1.75rem;
+    font-size: var(--text-2);
+    font-weight: 500;
+    line-height: 1.5rem;
+    gap: 0.625rem;
+    background-color: var(--color-brand-1);
+    border: none;
+    color: var(--color-grey-6);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+
+}
+
+.cardButton:hover{
+
+    background-color: var(--color-brand-2);
+}

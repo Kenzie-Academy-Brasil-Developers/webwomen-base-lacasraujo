@@ -1,0 +1,91 @@
+.vacanciesSelected{
+    position: sticky;
+    top: 0;
+    width: 38%;
+    margin-left: 2%;
+    margin-top: var(--spacing-1);
+    height: 100vh;
+    background-color:var(--color-grey-6);
+    padding: 2.375rem;
+    border-radius: var(--radius-1);
+
+
+    
+    
+}
+.pPattern{
+    margin-top: var(--spacing-1);
+    margin-bottom: var(--spacing-1);
+    font-weight: 400;
+    font-size: var(--text-2);
+    line-height: 2rem;
+    color: var(--color-grey-2);
+
+}
+.tittleAside{
+    font-weight: 600;
+    font-size: var( --title-4);
+    margin-bottom: var(--spacing-1);
+
+}
+
+.cardsAside{
+
+
+}
+
+.cardAside{
+    margin-top: var(--spacing-1);
+    margin-bottom: var(--spacing-1);
+
+}
+
+.h4AndButton{
+    display: flex;
+    margin-top: var(--spacing-1);
+    margin-bottom: var(--spacing-3);
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.CardAsideH4{
+    font-weight: 600;
+    font-size:var(--text-1) ;
+    line-height: 150%;
+    color: var(--color-grey-1);
+
+}
+
+.trash{
+    background-image: url(/assets/img/trash.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--color-grey-5);
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--radius-1);
+}
+
+.trash:hover{
+    background-color: var(--color-grey-3);
+}
+
+.spans{
+    font-weight: 400;
+    font-size: var(--text-3);
+    line-height: 1.375rem;
+    color: var(--color-grey-2);
+   
+
+}
+
+.enterprise{
+    margin-right: 2rem;
+
+}
+
+.location{
+
+}
