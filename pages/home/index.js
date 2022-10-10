@@ -1,18 +1,9 @@
 /* Desenvolva sua lógica aqui... */
 let arrSelected=[]
 
-function goToVacancies(){
-    let vacanciesButton =document.querySelector(".vacanciesButton")
-    vacanciesButton.addEventListener("click",()=>{
-        let vacancies =document.querySelector(".vacancies")
-
-        window.scrollTo(0, vacancies)
-
-    } )
+function verifi(){
+    arrSelected
 }
-
-goToVacancies()
-
 function locStorage(){
 
   let arrUpdated =JSON.parse( localStorage.getItem("PrefUser"))
@@ -82,10 +73,12 @@ function renderCards(){
         
 
        
-        if( arrSelected.find(obj => obj == element ) == undefined  ){
+
+        if( arrSelected.find(obj => obj.id == element.id ) == undefined  ){
             arrSelected.push(element)
             let arrSel = JSON.stringify(arrSelected)
             localStorage.setItem("PrefUser",arrSel)
+        
             cardButton.innerText = "Remover candidatura"
         }else{
 
@@ -99,6 +92,8 @@ function renderCards(){
         }
 
         renderCardsSelected()
+
+        
     })
 
     
@@ -165,12 +160,17 @@ function renderCardsSelected(){
 
         trash.addEventListener("click",()=>{
 
+
             cardsAside.innerHTML=""
 
             arrSelected.splice(index,1)
 
+
+
             let arrSel = JSON.stringify(arrSelected)
             localStorage.setItem("PrefUser",arrSel)
+
+           
 
             renderCardsSelected()
 
