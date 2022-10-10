@@ -2,7 +2,8 @@
 let arrSelected=[]
 
 function verifi(){
-    arrSelected
+
+    
 }
 function locStorage(){
 
@@ -54,6 +55,8 @@ function renderCards(){
     location.innerText = element.location
     description.innerText = element.descrition
 
+    cardButton.id = element.id
+
     let stri =""
     element.modalities.map(element => {
 
@@ -90,6 +93,7 @@ function renderCards(){
 
             
         }
+
 
         renderCardsSelected()
 
@@ -170,8 +174,10 @@ function renderCardsSelected(){
             let arrSel = JSON.stringify(arrSelected)
             localStorage.setItem("PrefUser",arrSel)
 
+            let cardButton =  document.getElementById(`${element.id}`)
+            console.log(cardButton)
+            cardButton.innerText="Candidatar"
            
-
             renderCardsSelected()
 
         })
